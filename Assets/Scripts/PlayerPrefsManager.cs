@@ -56,5 +56,22 @@ public class PlayerPrefsManager : MonoBehaviour {
             return false;
         }
     }
+
+    public static void SetDifficulty (float difficulty)
+    {
+        if (difficulty >= 0f && difficulty <= 1f)
+        {
+            PlayerPrefs.SetFloat(DIFFICULTY_KEY, difficulty);
+        }
+        else
+        {
+            Debug.LogError("Difficulty out of range");
+        }
+    }
+
+    public static float GetDifficulty()
+    {
+        return PlayerPrefs.GetFloat(DIFFICULTY_KEY);
+    }
 }
 
