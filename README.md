@@ -1,19 +1,19 @@
-# SpaceShips
-[C#] Retro-styled spaceship game
+# Plants vs Animals
+[C#] Plants vs. Zombies clone
 
 
 
 ## Refences
 
-[Space Invaders](https://en.wikipedia.org/wiki/Space_Invaders)
+[Plants vs. Zombies](http://www.popcap.com/plants-vs-zombies-1)
 
 
 ## Sample Screenshots
 
-![Image](https://jacobsalzberg.github.io/db/static/spaceships_01.png)
+![Image](placeholder)
 
-![Image](https://jacobsalzberg.github.io/db/static/spaceships_02.png)
+![Image](placeholder)
 
 ## Link to the game
 
-[Game](http://jacobsalzberg.github.io/SpaceShips)
+[Game](placeholder)

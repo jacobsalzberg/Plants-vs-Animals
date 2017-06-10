@@ -9,9 +9,12 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
+        if (autoLoadNextLevelAfter == 0)
+        {
+        }
         //print(SceneManager.GetActiveScene().buildIndex);
         Invoke("LoadTitle", autoLoadNextLevelAfter);
-
+        
         //SceneManager.LoadScene("01a Start");
     }
 
