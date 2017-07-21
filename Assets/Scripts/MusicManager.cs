@@ -45,7 +45,7 @@ public class MusicManager : MonoBehaviour {
 
         if (thisLevelMusic) // if there's some music attached
         {
-            print("oi puper");
+            print("tem musica");
             audioSource.clip = thisLevelMusic; //atribue o audiosource
             audioSource.loop = true;
             audioSource.Play();

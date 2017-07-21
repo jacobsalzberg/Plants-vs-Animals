@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class OptionsController : MonoBehaviour {
 
-    public Slider volumeSlider;
+    public Slider volumeSlider, diffSlider;
     public LevelManager levelManager;
 
     private MusicManager musicManager;
@@ -16,8 +16,9 @@ public class OptionsController : MonoBehaviour {
         musicManager = GameObject.FindObjectOfType<MusicManager>();
         //Debug.Log(musicManager); <-- verificar music manager, a partir da splash 
         //screen, pra ver que nao eh destruido
-
         volumeSlider.value = PlayerPrefsManager.GetMasterVolume();
+        diffSlider.value = PlayerPrefsManager.GetDifficulty();
+         
 		
 	}
 	
@@ -29,6 +30,7 @@ public class OptionsController : MonoBehaviour {
     public void SaveAndExit()
     {
         PlayerPrefsManager.SetMasterVolume(volumeSlider.value);
+        PlayerPrefsManager.SetDifficulty(diffSlider.value);
         levelManager.LoadLevel("01a Start");
 
     }
