@@ -5,15 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public float autoLoadNextLevelAfter;
+    public float autoLoadNextLevelAfter=0;
 
     private void Awake()
     {
         if (autoLoadNextLevelAfter == 0)
         {
         }
+        else
+        {
+            Invoke("LoadTitle", autoLoadNextLevelAfter);
+        }
         //print(SceneManager.GetActiveScene().buildIndex);
-        Invoke("LoadTitle", autoLoadNextLevelAfter);
+        
         
         //SceneManager.LoadScene("01a Start");
     }

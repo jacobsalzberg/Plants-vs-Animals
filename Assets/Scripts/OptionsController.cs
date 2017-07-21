@@ -18,9 +18,7 @@ public class OptionsController : MonoBehaviour {
         //screen, pra ver que nao eh destruido
         volumeSlider.value = PlayerPrefsManager.GetMasterVolume();
         diffSlider.value = PlayerPrefsManager.GetDifficulty();
-         
-		
-	}
+     }
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,5 +31,11 @@ public class OptionsController : MonoBehaviour {
         PlayerPrefsManager.SetDifficulty(diffSlider.value);
         levelManager.LoadLevel("01a Start");
 
+    }
+
+    public void SetDefaults()
+    {
+        volumeSlider.value = 0.8f;
+        diffSlider.value = 2f;
     }
 }
