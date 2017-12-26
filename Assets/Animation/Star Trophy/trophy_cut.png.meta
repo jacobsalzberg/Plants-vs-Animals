@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 9f54feb1cbd745e46b1e89d409ca6e4c
-timeCreated: 1514314846
+timeCreated: 1514316184
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: trophy_top
+    21300002: trophy_base
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -108,7 +110,35 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: trophy_top
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 37
+        height: 40
+      alignment: 9
+      pivot: {x: 0.50079376, y: 0.00007390976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: trophy_base
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
