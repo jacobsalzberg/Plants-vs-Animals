@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public float autoLoadNextLevelAfter=0;
-
+    
     private void Awake()
     {
         if (autoLoadNextLevelAfter <= 0)
