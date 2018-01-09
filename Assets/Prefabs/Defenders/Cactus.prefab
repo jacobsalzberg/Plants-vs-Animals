@@ -179,8 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cedc11ea5893cb44979e59bc70da5f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
+  projectile: {fileID: 1851294071480694, guid: 23184c0e9c2a5ff4baffe25c7df2b8ee, type: 2}
   projectileParent: {fileID: 0}
+  gun: {fileID: 1549559423809770}
 --- !u!212 &212256577806586150
 SpriteRenderer:
   m_ObjectHideFlags: 1
