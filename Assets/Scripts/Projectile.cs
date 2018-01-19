@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
 	}
 
-    //when no camera can see the object, delete it
+    // when no camera can see the object, delete it
     // NAO FUNCIONA AQUI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // usar shreder
     private void OnBecameInvisible() 
