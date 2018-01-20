@@ -25,7 +25,7 @@ public class Shooter : MonoBehaviour {
 
     private void Update()
     {
-        if (isAttackingAheadInLane())
+        if (IsAttackingAheadInLane())
         {
             animator.SetBool("isAttacking", true);
 
@@ -51,7 +51,7 @@ public class Shooter : MonoBehaviour {
         Debug.LogError(name + "can't find spawner in lane");
     }
 
-    bool isAttackingAheadInLane()
+    bool IsAttackingAheadInLane()
     {
         return false;    
     }
