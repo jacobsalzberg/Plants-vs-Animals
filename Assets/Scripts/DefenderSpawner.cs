@@ -24,8 +24,12 @@ public class DefenderSpawner : MonoBehaviour {
         //print("clicked"); //LEMBRAR ---> PRECISA DE COLLIDER PRA TER CLICK
         // print(SnapToGrid (CalculateWorldPointOfMouseClick()));
         //print("World position" + CalculateWorldPointOfMouseClick());
+        GameObject defender = Button.selectedDefender;
+        Quaternion zeroRot = Quaternion.identity;
+        GameObject newDef = Instantiate(defender, roundedPos, zeroRot) as GameObject;
 
-        Instantiate(Button.selectedDefender, roundedPos, Quaternion.identity);
+        newDef.transform.parent = parent.transform;
+
     }
 
     Vector2 SnapToGrid (Vector2 rawWorldPos)
