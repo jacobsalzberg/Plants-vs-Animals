@@ -43,16 +43,7 @@ public class Spawner : MonoBehaviour {
         // limite do spawn
         float threshold = spawnsPerSecond * Time.deltaTime / 5 ;  //5 lanes
 
-        if (Random.value < threshold)
-        {
-            return true;
-        } else
-        {
-            return false;
-        }
-
-
-        //return true;
+        return (Random.value < threshold);
     }
 
 

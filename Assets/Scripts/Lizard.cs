@@ -31,7 +31,7 @@ public class Lizard : MonoBehaviour
         // Leave the method if not colliding with defender
         if (!obj.GetComponent<Defender>()) //se n eh um defensor, o que fazer?
         {
-            Debug.Log("voltei");
+            //Debug.Log("voltei");
             return;
         }
 
