@@ -26,11 +26,20 @@ public class DefenderSpawner : MonoBehaviour {
         // print(SnapToGrid (CalculateWorldPointOfMouseClick()));
         //print("World position" + CalculateWorldPointOfMouseClick());
         GameObject defender = Button.selectedDefender;
+
+        int defenderCost = defender.GetComponent<Defender>().starCost;
+        if (starDisplay.UseStars(defenderCost) == StarDisplay.Status.SUCESS)
+        {
+            SpawnDefender(roundedPos, defender);
+        }
+
+    }
+
+    private void SpawnDefender(Vector2 roundedPos, GameObject defender)
+    {
         Quaternion zeroRot = Quaternion.identity;
         GameObject newDef = Instantiate(defender, roundedPos, zeroRot) as GameObject;
-
         newDef.transform.parent = parent.transform;
-
     }
 
     Vector2 SnapToGrid (Vector2 rawWorldPos)

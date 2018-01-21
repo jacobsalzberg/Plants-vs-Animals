@@ -14,6 +14,7 @@ public class StarDisplay : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         starText = GetComponent<Text>();
+        UpdateDisplay();
 	}
 	
 	// Update is called once per frame
