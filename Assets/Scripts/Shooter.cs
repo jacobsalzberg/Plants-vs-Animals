@@ -53,7 +53,22 @@ public class Shooter : MonoBehaviour {
 
     bool IsAttackingAheadInLane()
     {
-        return false;    
+        // Exit if no attackers in lane
+        if (myLaneSpawner.transform.childCount <= 0)
+        {
+            return false;
+        }
+        //if there are attackers, are they ahead?
+        foreach (Transform attacker in myLaneSpawner.transform)
+        {
+            if (attacker.transform.position.x > transform.position.x)
+            {
+                return true;
+            }
+        }
+
+        //attacker in lane, but behind us.
+        return false;
     }
     
     private void Fire ()
