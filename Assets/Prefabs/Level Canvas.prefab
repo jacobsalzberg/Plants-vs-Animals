@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 114348233585381772}
   - component: {fileID: 82968862227610956}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Game timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

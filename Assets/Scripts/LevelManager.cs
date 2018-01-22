@@ -42,6 +42,5 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("Quit request");
         Application.Quit();
-
-    }
+            }
 }
